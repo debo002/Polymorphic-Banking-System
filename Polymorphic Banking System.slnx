@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="Polymorphic Banking System/Polymorphic Banking System.vcxproj" />
+  <Project Path="Polymorphic Banking System/Polymorphic Banking System.vcxproj" Id="b103067b-c027-4fae-9f40-802b50d1b8f5" />
 </Solution>
