@@ -1,0 +1,52 @@
+# Visual Studio files
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+Debug/
+Release/
+x64/
+x86/
+*/Debug/
+*/Release/
+*/x64/
+*/x86/
+[Dd]ebug/
+[Rr]elease/
+
+# Compiled files
+*.exe
+*.obj
+*.pdb
+*.ilk
+*.idb
+*.ipch
+*.o
+*.out
+
+# Project user files
+*.vcxproj.filters
+*.vcxproj.user
+
+# Visual Studio cache
+.vscode/
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.opendb
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+*.log
