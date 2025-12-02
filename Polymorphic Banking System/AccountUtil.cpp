@@ -2,19 +2,22 @@
 #include <iostream>
 
 void display_accounts(const std::vector<Account*>& accounts) {
-    for (auto p : accounts) {
-        if (p) std::cout << *p << '\n';   // dereference -> calls IPrintable::operator<< -> print()
+    // Polymorphic printing via IPrintable interface
+    for (const auto account : accounts) {
+        if (account) std::cout << *account << '\n';
     }
 }
 
 void deposit_accounts(std::vector<Account*>& accounts, double amount) {
-    for (auto p : accounts) {
-        if (p) p->deposit(amount);        // virtual call; derived deposit executed
+    // Dynamic dispatch calls appropriate derived class deposit()
+    for (auto account : accounts) {
+        if (account) account->deposit(amount);
     }
 }
 
 void withdraw_accounts(std::vector<Account*>& accounts, double amount) {
-    for (auto p : accounts) {
-        if (p) p->withdraw(amount);       // virtual call
+    // Dynamic dispatch calls appropriate derived class withdraw()
+    for (auto account : accounts) {
+        if (account) account->withdraw(amount);
     }
 }

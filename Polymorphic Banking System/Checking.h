@@ -1,6 +1,7 @@
 #pragma once
 #include "Account.h"
 
+// Basic checking account with standard deposit/withdraw operations
 class Checking : public Account {
 public:
     Checking(std::string name = "Unnamed", double balance = 0.0);
@@ -8,6 +9,5 @@ public:
 
     bool deposit(double amount) override;
     bool withdraw(double amount) override;
-
     void print(std::ostream& os) const override;
 };
